@@ -10,20 +10,37 @@
     color: hsl(228, 45%, 44%); 
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-weight: 16;
     font-family: "Karla", "sans-serif";
-    font-weight: 400;
 }
 
 main {
     display: grid;
     place-content: center;
+    min-height: 100vh;
+    border-radius: 1rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin: 0;
 }
 
 h1 {
     color: hsl(179, 62%, 43%);
     font-size: x-large;
+    margin-block-end: 2rem;
 }
 
 h2 {
@@ -31,39 +48,31 @@ h2 {
     font-size: large;
 }
 
-h1, h2, h3 {
-    font-weight: 700;
-}
-
 .overview p {
     color: hsl(218, 22%, 67%);
+    line-height: 1.75;
+}
+
+article {
+    padding: 3rem;
 }
 
 .subInfo {
     color: hsl(204, 43%, 93%);
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 h3 {
     color: white;
-}
-
-button {
-    background-color: hsl(71, 73%, 54%);
-    color: white;
-    width: 100%;
-    border-radius: .25rem;
-    border: none;
-    box-shadow: 0 25px 25px hsl(218, 22%, 67%);
+    margin-block-end: 1.25rem;
 }
 
 .monthlySub {
     background-color: hsl(179, 60%, 46%);
-}
-
-.whyJoin {
-    background-color: hsl(179, 47%, 55%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
 }
 
 strong {
@@ -72,6 +81,24 @@ strong {
     margin-inline-end: .25rem;
 }
 
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    width: 100%;
+    height: 2.75rem;
+    border-radius: .25rem;
+    border: none;
+    box-shadow: -10px 10px 10px rgba(37, 37, 37, 0.1);
+}
+
+.whyJoin {
+    background-color: hsl(179, 47%, 55%);
+}
+
 ul {
     list-style: none;
+    padding-inline-start: 0;
+    line-height: 1.5;
+    margin-block-end: 0;
+    padding-block-end: 0;
 }
