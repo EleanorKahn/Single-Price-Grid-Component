@@ -1,8 +1,77 @@
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
     
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+body {
+    font-weight: 16;
+    font-family: "Karla", "sans-serif";
+    font-weight: 400;
+}
+
+main {
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: x-large;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: large;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+.overview p {
+    color: hsl(218, 22%, 67%);
+}
+
+.subInfo {
+    color: hsl(204, 43%, 93%);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h3 {
+    color: white;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    width: 100%;
+    border-radius: .25rem;
+    border: none;
+    box-shadow: 0 25px 25px hsl(218, 22%, 67%);
+}
+
+.monthlySub {
+    background-color: hsl(179, 60%, 46%);
+}
+
+.whyJoin {
+    background-color: hsl(179, 47%, 55%);
+}
+
+strong {
+    color: white;
+    font-size: xx-large;
+    margin-inline-end: .25rem;
+}
+
+ul {
+    list-style: none;
 }
