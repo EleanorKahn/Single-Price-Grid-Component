@@ -54,8 +54,6 @@ article {
     margin-block: 0rem;
 }
 
-
-
 .subInfo {
     color: hsl(204, 43%, 93%);
     display: grid;
@@ -126,9 +124,9 @@ ul {
     .pricing {
         margin-block-start: 0;
     }
-    body {
-        height: auto;
-        width: auto;
+    
+    main {
+        width: initial;
     }
 }
 
