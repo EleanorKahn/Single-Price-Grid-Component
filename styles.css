@@ -1,15 +1,4 @@
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-    
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
-
+/* General styles */
 html {
     box-sizing: border-box;
 }
@@ -21,15 +10,20 @@ html {
 }
 
 body {
+    background-color: aliceblue;
     font-weight: 16;
     font-family: "Karla", "sans-serif";
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 main {
+    background-color: white;
     display: grid;
     place-content: center;
-    min-height: 100vh;
-    border-radius: 1rem;
+    box-shadow: 1.5px 2px 20px black;
+    width: 675px;
 }
 
 h1, h2, h3 {
@@ -37,25 +31,30 @@ h1, h2, h3 {
     margin: 0;
 }
 
-h1 {
+article {
+    padding: 3rem;
+}
+
+/* Overview styling */
+.overview h1 {
     color: hsl(179, 62%, 43%);
     font-size: x-large;
     margin-block-end: 2rem;
 }
 
-h2 {
+.overview h2 {
     color: hsl(71, 73%, 54%);
     font-size: large;
+    margin-block-end: 1rem;
 }
 
 .overview p {
     color: hsl(218, 22%, 67%);
-    line-height: 1.75;
+    line-height: 2;
+    margin-block: 0rem;
 }
 
-article {
-    padding: 3rem;
-}
+
 
 .subInfo {
     color: hsl(204, 43%, 93%);
@@ -63,7 +62,7 @@ article {
     grid-template-columns: 1fr 1fr;
 }
 
-h3 {
+.subInfo h3 {
     color: white;
     margin-block-end: 1.25rem;
 }
@@ -73,6 +72,10 @@ h3 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+}
+
+.monthlySub .pricing {
+    margin-block-start: 0rem;
 }
 
 strong {
@@ -103,6 +106,10 @@ ul {
     padding-block-end: 0;
 }
 
+.access {
+    margin-block-start: 0rem;
+}
+
 @media screen and (max-width: 480px) {
     .subInfo {
         display: flex;
@@ -119,4 +126,20 @@ ul {
     .pricing {
         margin-block-start: 0;
     }
+    body {
+        height: auto;
+        width: auto;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
